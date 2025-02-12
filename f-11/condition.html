@@ -4,28 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condition</title>
+        
+        <!-- if -->
 </head>
 <body>
+    <label for="">number 1</label> <br>
+    <input type="text" name="" id="number1"> <br>
+    <br>
 
-
-
-
-
-
-
-
-
+    <label for="">number 2</label> <br>
+    <input type="text" id="number2"> <br>
     
+    <br>
+    <input type="button" value="find max number" onclick="maxx()">
+    <br> <br>
+
+    <input type="text" name="" id="result">
+
+<script>
+
+function maxx() {
+            let num1 = parseInt(document.getElementById('number1').value);
+            let num2 = parseInt(document.getElementById('number2').value);
+            if(num1 >= num2){
+                document.getElementById('result').value=num1+' is max number';
+            }
+            else{
+                document.getElementById('result').value=num2+' is max number';
+            }
+        }
+
+    // function max(){
+
+    //     let input1 = parseInt(document.getElementById(number1).value); 
+    //         let input2 = parseInt(('2nd number'));
+
+    //     if(number1 >= number2){
+                
+
+
+    //         }
+
+    //         else{
+    //             document.write( number2+' is')
+    //         }
+    // }
+
+    // let input = prompt('enter number')
+
+    // if(input % 2 != 0){
+    //     document.write('input+ this is a even number');
+
+    // }
+    // else{
+    //     document.write()
+    // }
+            // let input1 = parseInt(prompt('1st number')); 
+            // let input2 = parseInt(prompt('2nd number')); 
+
+            // if(input1 >= input2){
+            //     document.write(input1+ ' is max number');
+
+            // }
+            // else{
+            //     document.write(input2+ ' is max number');
+            // }
+
+            
+
+
+           
 
 
 
+</script>
 
-
-
-
-
-
-    
     
 </body>
 </html>
