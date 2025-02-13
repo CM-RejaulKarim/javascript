@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+<body>
+    
+<label for="">number</label>    <br>
+<input type="text" name="" id="numb">   <br>
+    <br>
+<input type="button" value="leap year" onclick="leap()">    <br>
+    <br>
+<input type="text" name="" id="result"> <br>
+
+    <script>
+function Leap() {
+let num = parseInt(document.getElementById('numb').value);
+if(num % 4 ==0) {
+    document.getElementById('result').value= num+ ' is leap year';
+}
+else{
+    document.getElementById('result').value= num+ ' is not leap year';
+}
+}
+
+
+
+
+    </script>
+</body>
+</html>

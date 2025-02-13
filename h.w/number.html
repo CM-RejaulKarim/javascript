@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">number</label><br>
+    <input type="text" name="" id="number">
+    <p></p>
+
+    <input type="button" value="What type of number" onclick="whn()">
+    <p></p>
+
+    <span id="result"></span>
+
+    <script>
+        function whn() {
+            let num = parseInt(document.getElementById('number').value);
+
+            if(num >= 1) {
+                document.getElementById('result').innerHTML= num+ ' is positive number';
+            }
+            else if(num == 0) {
+                document.getElementById('result').innerHTML= num+ ' is zero number';
+            }
+            else{
+                document.getElementById('result').innerHTML= num+ ' is negetive number';
+            }
+
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
