@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <label for="">Year</label><br>
+    <input type="text" name="" id="year">
+    <p></p>
+
+    <input type="button" value="Leap Year or not" onclick="leap()">
+    <p></p>
+
+    <span id="result"></span>
+    <!-- <input type="text" name="" id="result"> -->
+
+    <script>
+        function leap() {
+            let inp = parseInt(document.getElementById('year').value);
+
+            // if (inp % 4 == 0 && inp % 400 == 0)
+            // (inp % 4 == 0 || inp % 400 == 0)
+
+            if (inp % 4 == 0) {
+
+                if (inp % 100 == 0) {
+
+                    if (inp % 400 == 0) {
+                        document.getElementById('result').innerHTML = inp + ' is Leap Year';
+                    }
+                    else {
+                        document.getElementById('result').innerHTML = inp + ' is not Leap Year';
+                    }
+                }
+                else {
+                    document.getElementById('result').innerHTML = inp + ' is Leap Year';
+                }
+
+                // if (inp % 400 == 0) {
+                //     document.getElementById('result').innerHTML= inp+ ' is Leap Year';
+                // }
+                // else {
+                //     document.getElementById('result').innerHTML= inp+ ' is not Leap Year';
+                // }
+            }
+            else {
+                document.getElementById('result').innerHTML = inp + ' is not Leap Year';
+            }
+        }
+    </script>
+</body>
+
+</html>

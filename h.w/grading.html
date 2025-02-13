@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading</title>
+</head>
+<body>
+    
+    <label for="">Mark</label>
+    <input type="text" name="" id="mark"><p></p>
+
+    <input type="button" value="check grade" onclick="grade()"><p></p>
+
+    <span id="result"></span>
+
+    <script>
+        function grade() {
+            let inp = parseInt(document.getElementById('mark').value);
+
+            if(inp >= 80 && inp <=100){
+                document.getElementById('result').innerHTML = inp+' is Grade A+';
+            }
+            else if(inp >= 70 && inp <=79){
+                document.getElementById('result').innerHTML = inp+' is Grade A';
+            }
+            else if(inp >= 60 && inp <=69){
+                document.getElementById('result').innerHTML = inp+' is Grade A-';
+            }
+            else if(inp >= 50 && inp <=59){
+                document.getElementById('result').innerHTML = inp+' is Grade B';
+            }
+            else if(inp >= 40 && inp <=49){
+                document.getElementById('result').innerHTML = inp+' is Grade C';
+            }
+            else if(inp >= 33 && inp <=39){
+                document.getElementById('result').innerHTML = inp+' is Grade D';
+            }
+            else if(inp >= 0 && inp <=32){
+                document.getElementById('result').innerHTML = inp+' is Grade F';
+            }
+            else{
+                document.getElementById('result').innerHTML = inp+ ' is Invalid'
+            }
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>
