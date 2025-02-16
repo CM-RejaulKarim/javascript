@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading</title>
+</head>
+
+<body>
+
+    <label for="">Mark</label> <br>
+    <input type="text" name="" id="mark">
+    <p></p>
+
+    <input type="button" value="check grade" onclick="grade()">
+    <p></p>
+
+    <span id="result"></span>
+
+    <script>
+        function grade() {
+            let inp = parseInt(document.getElementById('mark').value);
+
+            if (inp > 100) {
+                document.getElementById('result').innerHTML = inp + ' is Invalid';
+            }
+            else if (inp >=90 ) {
+                document.getElementById('result').innerHTML = inp + ' is Grade A';
+            }
+            else if (inp >= 80) {
+                document.getElementById('result').innerHTML = inp + ' is Grade B';
+            }
+            else if (inp >= 70) {
+                document.getElementById('result').innerHTML = inp + ' is Grade C';
+            }
+            else if (inp >= 60) {
+                document.getElementById('result').innerHTML = inp + ' is Grade D';
+            }
+            else {
+                document.getElementById('result').innerHTML = inp + ' is Grade F';
+            }
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

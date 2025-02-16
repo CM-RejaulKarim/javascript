@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let inp = parseInt(prompt('enter price'));
+
+        if (inp < 100) {
+            document.write(inp);
+        }
+        else if (inp <= 300) {
+            document.write(inp-(inp*.10));
+        }
+        else if (inp <= 700) {
+            document.write(inp-(inp*.15));
+        }
+        else if (inp <= 1000) {
+            document.write(inp-(inp*.20));
+        }
+        else{
+            document.write(inp-(inp*.25))
+        }
+
+    </script>
+</body>
+
+</html>
