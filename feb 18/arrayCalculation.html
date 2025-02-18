@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username and Password matching by using ARRAY</title>
+</head>
+
+<body>
+
+    <script>
+
+        let names = ['Istiaq', 'Masud', 'Imran', 'Atique', 'Semanto', 'Arif', 'Atik', 'Reja', 'Abdur Rahim', 'Sadiar', 'Rakib', 'Parvej', 'Eiasin', 'Shathe', 'Rahmatullah'];
+        let passwords = ['123', '234', '345', '456', '567', '678', '789', '890', '901', '012', '123', '234', '345', '456', '567'];
+
+
+        let uName = prompt('enter user name').toLowerCase();
+
+        for (let i = 0; i < names.length; i++) {
+
+            if (uName == names[i].toLowerCase()) {
+                let index = i;
+                let password = prompt('enter your password');
+                if (password == passwords[index]) {
+                    //document.write('welcome ' + uName);
+                    document.write('welcome ' + names[index]);
+                }
+                else {
+                    document.write('password is incorrect');
+                }
+                break;
+            }
+
+            if (i == names.length - 1) {
+                document.write('user name is incorrect')
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
