@@ -14,24 +14,21 @@
     let n1 = 0;
     let n2 = 1;
     let sum = 0;
-    let nSum = 0;
+    let nSum = n1+n2;
 
 
-    document.write(n1 + ' <br>');
-    document.write(n2 + ' <br>');
+    // document.write(n1 + ' <br>');
+    // document.write(n2 + ' <br>');
 
     for (let i = 3; i <= n; i++) {
         sum = n1 + n2;
-       
+        nSum += sum;
         n1 = n2;
         n2 = sum;
-        document.write(sum + '<br>');
-        nSum=
-        
-
-
+        // document.write(sum + '<br>');
+     
     }
-    // document.write(sum += n5);
+    document.write(nSum);
 
 
 
