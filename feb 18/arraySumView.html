@@ -12,13 +12,13 @@
         let sum = 0;
         let myarray = [];
 
-        for(let i = 0; i <= input; i++){
+        for(let i = 0; i < input; i++){
             
-           let in1 = parseInt(prompt('in1'));
+           let in1 = parseInt(prompt('Enter ' + (i+1) + ' value'));
            sum += in1;
            myarray[i]= in1;
         }
-        document.write(myarray+' ');
+        document.write(myarray+' <br>');
         document.write(sum);
 
 
