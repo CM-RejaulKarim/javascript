@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="">Email</label> <br>
+    <input type="text" id="email"> <br>
+    <label for="">Password</label><br>
+    <input type="password" name="" id="Password">
+    <br>
+
+    <input type="button" value="check Email" onclick="checkMail()">
+    <input type="button" value="password" onclick="pass()">
+    <!-- <span style='color: green;'></span> -->
+    <span id="message"></span>
+
+    <script>
+
+        function checkMail() {
+
+            let email = document.getElementById('email').value;
+            let pattern = /^\S+@\S+\.\S+$/;
+
+            let password = document.getElementById(password).value;
+            let pattern2 = "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$";
+
+            if (pattern.test(email)) {
+                document.getElementById('message').innerHTML = "<span style='color: green;'>Email is Valid</span><br>";
+            }
+            else {
+                document.getElementById('message').innerHTML = "<span style='color: red;'>Email is Invalid</span><br>";
+            }
+
+        }
+        function pass() {
+            if (pattern2.test(password)) {
+                document.getElementById('message').innerHTML = "<span style='color: green;'>Perfect password</span><br>";
+            }
+            else {
+                document.getElementById('message').innerHTML = "<span style='color: green;'>Not a Perfect password</span><br>";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
