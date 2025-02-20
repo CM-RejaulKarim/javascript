@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail</title>
+</head>
+
+<body>
+
+
+    <script>
+        let email = prompt('enter email');
+        let pattern = /^[^@]+@[^@]+\.[^@]+$/;
+
+        if (pattern.test(email)) {
+            document.write('email is valid');
+        }
+        else {
+            document.write('email is invalid');
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
