@@ -1,8 +1,5 @@
-
-
-
-function formdatasend(event) {
-    event.preventdefault()
+function submitForm() {
+   
 
 
 
@@ -23,14 +20,14 @@ function formdatasend(event) {
     let output = "Name: " + uName + "\n"
         + "Contact: " + contact + "\n"
         + "Remarks: " + remarks + "\n"
-        + "Sex: " + sex + "\n"
-        + "Course: " + course + "\n"
+        + "Sex: " + sex.value + "\n"
+        + "Course: " + courseValue + "\n"
         + "Location: " + location;
 
-    let newWindow = window.open('', '_blank');
+    let newWindow = window.open("", '_blank');
     newWindow.document.write("<pre>" + output + "</pre>");
 
 
 }
-let myForm = document.getElementById('myForm');
-myForm.addEventListener('submit', formdatasend)
+// let myForm = document.getElementById('myForm');
+// myForm.addEventListener('submit', submitForm);

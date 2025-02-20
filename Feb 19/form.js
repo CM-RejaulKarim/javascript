@@ -1,5 +1,7 @@
 
-function formdatasend(event) {
+
+
+function submitform(event) {
     event.preventDefault()
 
 
@@ -30,7 +32,7 @@ function formdatasend(event) {
     let newWindow = window.open('', '_blank');
     newWindow.document.write("<pre>" + output + "</pre>");
 
-    console.log(stName+ ' '+ email+ ' '+ DOB + ' '+ Gender+ ' '+ Round+ ' '+ hobbyValue+ ' '+ Address);
+    console.log(stName + ' ' + email + ' ' + DOB + ' ' + Gender + ' ' + Round + ' ' + hobbyValue + ' ' + Address);
 }
 let myForm = document.getElementById('myForm');
-myForm.addEventListener('submit', formdatasend);
+myForm.addEventListener('submit', submitform);

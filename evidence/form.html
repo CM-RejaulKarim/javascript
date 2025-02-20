@@ -8,43 +8,41 @@
 </head>
 
 <body>
-    <form id="myForm">
+    <form action="" id="myForm">
 
-        <div>
-            <label>Name</label>
-            <input type="text" id="name">
-        </div><br>
-        <div>
-            <label>Contact</label>
-            <input type="text" id="contact">
-        </div><br>
-        <div>
-            <label>Remarks</label>
-            <textarea id="remarks"></textarea>
-        </div><br>
-        <div>
-            <label>Sex</label>
-            <input type="radio" name="sex" id="sex"> Male
-            <input type="radio" name="sex" id="sex"> Female
-        </div><br>
-        <div>
-            <label>Course</label>
-            <input type="checkbox" name="course" id="course"> NT
-            <input type="checkbox" name="course" id="course"> IAD
-            <input type="checkbox" name="course" id="course"> DDD
-            <input type="checkbox" name="course" id="course"> ESAD
-        </div><br>
-        <div>
-            <label>Location</label>
-            <select id="location">
-                <option value="Banani">Banani</option>
-                <option value="Dhanmondi">Dhanmondi</option>
-                <option value="Mirpur">Mirpur</option>
-            </select>
-        </div><br>
-        <div>
-            <input type="submit" value="submit">
-        </div>
+        <label for="">Name</label>
+        <input type="text" id="name">
+
+        <br>
+        <label for="">Contact</label>
+        <input type="text" id="contact">
+
+        <br>
+        <label for="">Remarks</label>
+        <textarea id="remarks"></textarea>
+
+        <br>
+        <label for="">Sex</label>
+        <input type="radio" name="sex" value="Male"> Male
+        <input type="radio" name="sex" value="Female"> Female
+
+        <br>
+        <label for="">Course</label>
+        <input type="checkbox" name="course" value="NT"> NT
+        <input type="checkbox" name="course" value="IAD"> IAD
+        <input type="checkbox" name="course" value="DDD"> DDD
+        <input type="checkbox" name="course" value="ESAD"> ESAD
+
+        <br>
+        <label for="">Location</label>
+        <select id="location">
+            <option value="Banani">Banani</option>
+            <option value="Dhanmondi">Dhanmondi</option>
+            <option value="Mirpur">Mirpur</option>
+        </select><br>
+
+        <input type="submit" value="submit" onclick="submitForm()">
+
 
 
     </form>
