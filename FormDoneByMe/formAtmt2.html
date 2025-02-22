@@ -4,52 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Document</title>
 </head>
 
 <body>
 
+    <form action="" id="myForm">
 
-    <form action="" id="myform">
-
-        <label for="">Full Name: </label> <br>
-        <input type="text" id="name"> <br>
+        <label for="">Name</label><br>
+        <input type="text" id="name"><br>
 
         <label for="">Contact</label><br>
         <input type="text" id="contact"><br>
 
-        <label for="">Remarks</label><br>
-        <textarea id="remarks"></textarea><br>
+        <label for="">Remark</label><br>
+        <textarea id="remark"></textarea><br>
 
         <label for="">Sex</label><br>
-        <input type="radio" name="gender" value="Female"> Female <br>
-        <input type="radio" name="gender" value="Male"> Male <br>
+        <input type="radio" name="gender" value="male"> Male <br>
+        <input type="radio" name="gender" value="female"> Female <br>
 
-
-
-
-        <label for="">Courses</label> <br>
+        <label for="">Courses</label><br>
         <input type="checkbox" name="course" value="NT"> NT <br>
         <input type="checkbox" name="course" value="IAD"> IAD <br>
         <input type="checkbox" name="course" value="DDD"> DDD <br>
         <input type="checkbox" name="course" value="ESAD"> ESAD <br>
 
-        <label for="">Location</label>
-
-        <select name="" id="location">
+        <label for="">Location</label><br>
+        <select id="location">
             <option value="Banani">Banani</option>
             <option value="Dhanmondi">Dhanmondi</option>
             <option value="Mirpur">Mirpur</option>
-            <option value="Badda">Badda</option>
-        </select><br><br>
+        </select> <br><br>
 
-        <input type="button" value="Submit" onclick="dataSend()"> <br>
-        <input type="reset"  value="Reset">
+        <input type="button" value="submit" onclick="formSubmit()">
+        <input type="button" value="reset">
 
 
     </form>
-
-    <script src="form.js"></script>
+        <script src="formAtmt.js"></script>
 </body>
 
 </html>

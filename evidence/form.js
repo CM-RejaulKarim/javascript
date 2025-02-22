@@ -1,13 +1,10 @@
-function submitForm() {
+function datasend() {
    
-
-
-
     let uName = document.getElementById('name').value;
     let contact = document.getElementById('contact').value;
     let remarks = document.getElementById('remarks').value;
 
-    let sex = document.querySelector('input[name="sex"]:checked');
+    let gender = document.querySelector('input[name="gender"]:checked');
     let course = document.querySelectorAll('input[name="course"]:checked');
     let location = document.getElementById('location').value;
 
@@ -20,14 +17,14 @@ function submitForm() {
     let output = "Name: " + uName + "\n"
         + "Contact: " + contact + "\n"
         + "Remarks: " + remarks + "\n"
-        + "Sex: " + sex.value + "\n"
+        + "Sex: " + gender.value + "\n"
         + "Course: " + courseValue + "\n"
         + "Location: " + location;
 
-    let newWindow = window.open("", '_blank');
+    let newWindow = window.open('', '_blank');
     newWindow.document.write("<pre>" + output + "</pre>");
 
-
+    console.log(uName+' '+contact+' '+remarks+' '+gender.value+' '+courseValue+' '+location)
 }
 // let myForm = document.getElementById('myForm');
-// myForm.addEventListener('submit', submitForm);
+// myForm.addEventListener('submit', datasend);
