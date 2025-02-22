@@ -11,7 +11,7 @@ function datasend() {
     let courseValue = [];
 
     for (let i = 0; i < course.length; i++) {
-        courseValue.push[i].value;
+        courseValue.push(course[i].value);
     }
 
     let output = "Name: " + uName + "\n"
