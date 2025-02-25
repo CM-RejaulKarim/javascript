@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let n = parseInt(prompt('Enter Input Range'));
+        let a = [];
+
+        for (let z = 0; z < n; z++) {
+            let n1 = parseInt(prompt('Enter Input ' + (z + 1)));
+            a[z] = n1;
+        }
+        //document.write(a);
+        for (let i = 0; i < a.length - 1; i++) {
+            for (let j = 0; j < a.length - 1 - i; j++) {
+
+                if (a[j] > a[j + 1]) {
+
+                    let temp = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
+                }
+            }
+        }
+        document.write(a);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
